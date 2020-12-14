@@ -110,7 +110,7 @@ async function start() {
 						client.sendMessage(from, 'Gagal nulis *X*', msgType.text, {quoted: mek})
 					}
 					// uncomment if you want to activate this feature
-				/*} else if (body.startsWith('!tsticker ') || body.startsWith('!tstiker ')) {
+				} else if (body.startsWith('!tsticker ') || body.startsWith('!tstiker ')) {
 					const teks = encodeURIComponent(body.slice(args[0].length))
 					random = `${Math.floor(Math.random() * 10000)}.png`
 					rendom = `${Math.floor(Math.random() * 20000)}.webp`
@@ -121,7 +121,7 @@ async function start() {
 						client.sendMessage(from, buffer, msgType.sticker, {quoted: mek})
 						fs.unlinkSync(random)
 						fs.unlinkSync(rendom)
-					})*/
+					})
 				} else if (body == '!help' || body == '!menu') {
 					client.sendMessage(from, help(), msgType.text, {quoted: mek})
 				} else {
